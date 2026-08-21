@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Контакты</title>
+
+    <!-- Подключение Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Иконки (опционально) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Стили для формы -->
+    <style>
+        .form-control {
+            border-color: #ced4da;
+            box-shadow: none;
+        }
+
+        .input-group-text {
+            background-color: transparent !important;
+            color: #6c757d;
+            padding-top: 0.6rem;
+            padding-bottom: 0.6rem;
+        }
+
+        .btn-primary.form-btn {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 75%;
+        }
+
+    </style>
+</head>
+<body class="bg-light">
+<div class="container-fluid p-0">
+    <div class="row flex-column-reverse flex-md-row">
+        <!-- Левое меню (адаптивное) -->
+        <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-dark sidebar collapse position-fixed h-100">
+            <div class="position-sticky pt-3">
+                <h6 class="text-white">Меню</h6>
+                <ul class="nav flex-column">
+                    <li><a class="nav-link text-white" href="#"><i class="bi bi-house"></i> Главная</a></li>
+                    <li><a class="nav-link text-white" href="#"><i class="bi bi-grid-3x3-gap"></i> Категории</a></li>
+                    <li><a class="nav-link text-white" href="#"><i class="bi bi-list-check"></i> Заказы</a></li>
+                    <li><a class="nav-link text-white active" aria-current="page" href="#"><i class="bi bi-envelope"></i> Контакты</a></li>
+                </ul>
+                <hr>
+                <div class="dropdown mt-auto">
+                    <button class="btn btn-outline-primary dropdown-toggle w-100" type="button" data-bs-toggle="dropdown">Пользователь</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Профиль</a></li>
+                        <li><a class="dropdown-item" href="#">Выход</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Основная часть страницы -->
+        <main class="col-md-9 ms-sm-auto px-md-4 py-3">
+            <div class="text-center">
+                <h1 class="mb-4">Контакты</h1>
+            </div>
+
+            <!-- Делю страницу на два блока в сетке -->
+            <div class="row g-4">
+                <!-- Блок с формой (слева) -->
+                <div class="col-md-6">
+                    <div class="border border-secondary p-3 mb-4" style="max-width: 100%; margin-left: auto; margin-right: auto; --bs-border-opacity: 1 !important;">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nameInput" class="form-label">Имя</label>
+                                <input type="text" class="form-control" id="nameInput" placeholder="Введите ваше имя...">
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">@</span>
+                                <input type="email" class="form-control" placeholder="Введите вашу почту..." aria-describedby="emailAddon">
+                            </div>
+                            <div class="mb-3">
+                                <label for="messageTextarea" class="form-label">Сообщение</label>
+                                <textarea class="form-control" id="messageTextarea" rows="4" style="resize:none;" placeholder="Напишите нам..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary mt-2 w-100">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Блок с текстом (справа) -->
+                <div class="col-md-6">
+                    <h2>Наши контакты</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>While these feedback styles cannot be styled with CSS, you can still customize the feedback text through JavaScript.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+<!-- Скрипты Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
