@@ -1,0 +1,31 @@
+[
+{
+    "model": "catalog.category",
+    "pk": 1,
+    "fields": {
+        "name": "Книги",
+        "description": "Учебники и художественная литература"
+    }
+},
+{
+    "model": "catalog.category",
+    "pk": 2,
+    "fields": {
+        "name": "Электроника",
+        "description": "Мобильные устройства"
+    }
+},
+{
+    "model": "catalog.product",
+    "pk": 2,
+    "fields": {
+        "name": "Poco F 6",
+        "description": "Смартфон.",
+        "image": "",
+        "category": 2,
+        "price": "18000.00",
+        "created_at": "2026-08-22T08:24:28.600Z",
+        "updated_at": "2026-08-22T08:24:28.600Z"
+    }
+}
+]
