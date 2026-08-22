@@ -18,6 +18,7 @@ pandas = "^3.0.5"
 openpyxl = "^3.1.5"
 tabulate = "^0.10.0"
 fastapi = {extras = ["all"], version = "^0.141.1"}
+pillow = "^12.3.0"
 
 
 [tool.poetry.group.dev.dependencies]
